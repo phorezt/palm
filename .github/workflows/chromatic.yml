@@ -3,8 +3,8 @@ on:
   pull_request:
   push:
     paths:
-      - "/src/stories/**"
-      - "/src/components/**"
+      - "src/stories/**"
+      - "src/components/**"
 
 jobs:
   test:
