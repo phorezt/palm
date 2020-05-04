@@ -1,13 +1,8 @@
 name: "test chromatic"
-on:
-  pull_request:
-  push:
-    paths:
-      - "src/stories/**"
-      - "src/components/**"
+on: [pull_request, push]
 
 jobs:
-  test:
+  chromatic:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
