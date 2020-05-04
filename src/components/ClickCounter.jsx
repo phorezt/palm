@@ -5,7 +5,21 @@ export function ClickCounter({ start }) {
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Click</button>
-      <output>{count}</output>
+      <output
+        style={{
+          display: "inline-block",
+          textAlign: "center",
+          marginLeft: ".5rem",
+          borderRadius: 20,
+          background: "rebeccapurple",
+          color: "white",
+          fontFamily: "sans-serif",
+          fontSize: ".8rem",
+          padding: "0 .4rem",
+        }}
+      >
+        {count}
+      </output>
     </div>
   );
 }
